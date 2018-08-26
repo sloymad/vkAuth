@@ -18,6 +18,9 @@ public class VkLoginErrorPage {
     @FindBy(xpath = "//button[@id='login_button']")
     private WebElement logInButton;
 
+    @FindBy(id = "login_message")
+    private WebElement errorMessage;
+
 
     @Step("Ввод логина")
     public void enterLogin(String keyword){
@@ -32,6 +35,13 @@ public class VkLoginErrorPage {
     @Step("Нажатие кнопки Войти")
     public void clickOnEnterButtonAgain(){
         logInButton.click();
+    }
+
+    @Step("Ошибка входа")
+
+    public boolean errorMessageBlock() {
+
+        return errorMessage.isDisplayed();
     }
 
     public VkLoginErrorPage(WebDriver driver) {

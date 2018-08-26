@@ -13,7 +13,7 @@ public class VkStartPage {
     @FindBy(xpath = "//*[@id='index_email']" )
     private WebElement emailField;
 
-    @FindBy(xpath = "/*[@id='index_pass']" )
+    @FindBy(xpath = "//*[@id='index_pass']" )
     private WebElement passwordField;
 
     @FindBy(xpath = "//button[@id='index_login_button']")

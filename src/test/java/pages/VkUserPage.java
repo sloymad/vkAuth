@@ -14,7 +14,12 @@ public class VkUserPage {
 
     @Step("Переход в сообщения")
     public boolean moveToTheMessages() {
-        return myMessages.getText().contains("Мои сообщения");
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return myMessages.getText().contains("Сообщения");
     }
 
     public VkUserPage(WebDriver driver) {

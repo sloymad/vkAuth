@@ -15,7 +15,7 @@ public class InitBrowserDriver {
     public WebDriver chromeDriver() {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setBrowserName("chrome");
-        capabilities.setVersion("66.0");
+        capabilities.setVersion("65.0");
         capabilities.setPlatform(Platform.ANY);
         capabilities.setCapability("enableVNC", true);
 

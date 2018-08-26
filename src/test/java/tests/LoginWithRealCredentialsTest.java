@@ -13,7 +13,7 @@ public class LoginWithRealCredentialsTest extends TestBase {
         vkStartPage.enterLogin("+79312490195");
         vkStartPage.enterPassword("2020327zz");
         vkStartPage.clickOnEnterButton();
-        assertEquals(vkUserPage.moveToTheMessages(), true, "Мои сообщения");
+        assertEquals(vkUserPage.moveToTheMessages(), true, "Мои Сообщения");
 
     }
 }
